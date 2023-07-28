@@ -1,0 +1,17 @@
+MKS bağlanamıyor: Yeniden deneme süresi içinde \\.\pipe\vmware-authdpipe hattına bağlanılamadı
+MERHABA
+VM konsoluna erişemiyoruz ve VSphere istemcisinde Unable to connect the MKS: Could not connect to pipe \\.\pipe\vmware-authdpipe in retry period hatası alıyoruz.
+Sorun, bir VPN ağı üzerinden bağlandığımızda oluyor.
+Birden fazla sistemde denedik ama aynı sorun.
+Yerel ağ üzerinden bağlandığımızda, erişebiliyoruz.
+
+
+ 
+
+
+  
+Buradaki esxi01 ve esxi02 olan hostlarımızın ip adreslerini localdeki host dosyamıza ekliyoruz.
+%WinDir%\System32\Drivers\Etc yazarak host dosyamıza ekliyoruz 
+192.168.7.36 esxi01.burak.com gibi sonrasında hata çözülüyor.
+
+
